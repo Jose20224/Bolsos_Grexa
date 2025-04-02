@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #7D946D;
+    font-family: "Style Script";
+    padding: 10px 0;
+    text-align: center;
+   
+}
+
+.header>.nav{
+    display: flex;
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+
+}
+
+.nav>.componente_1,.componente_2,.componente_3{
+    margin: 0 15px;
+    text-decoration: none;
+   
+    font-size: 28px;
+    height: 30%;
+    width: 100%;
+}
+
+/* Estilo para listas en fila */
+.nav__ul_1,.nav__ul_2,.nav__ul_3 {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Coloca los elementos en fila */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.nav__ul_1 li a,.nav__ul_2 li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color:#2b2b2b; /* Cambia el color del texto (ajústalo según tu diseño) */
+    font-weight: bold; /* Opcional: hace el texto más destacado */
+}
+
+.nav__ul_1 li a:hover {
+    color: #007BFF; /* Cambia el color al pasar el cursor (opcional) */
+}
+
+
+.nav__ul_2 li a:hover {
+    color: #007BFF; /* Cambia el color al pasar el cursor (opcional) */
+}
+
+
+
+.componente_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.componente_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.componente_3>.Subcomponente_1{
+    height: 30%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.nav__ul_3>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+#icon_bolso{
+
+    width: 35px;
+    height: 35px;
+
+}
+
+#logo_header{
+    width: 45px;
+    height: 45px;
+}

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #5a3a2e;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-panel {
+    width: 50%;
+    background: #a57b5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.image-container img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.right-panel {
+    width: 50%;
+    background: rgba(165, 123, 91, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+   
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-top: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #5a3a2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+.register-text a {
+    color: #f8d6b8;
+    text-decoration: none;
+}
