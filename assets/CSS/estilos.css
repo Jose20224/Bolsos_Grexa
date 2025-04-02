@@ -27,7 +27,7 @@ body{
     margin: 0 15px;
     text-decoration: none;
    
-    font-size: 28px;
+    font-size: 24px;
     height: 30%;
     width: 100%;
 }
@@ -96,4 +96,79 @@ body{
 #logo_header{
     width: 45px;
     height: 45px;
+}
+
+/*==========================================================*/
+/*==========================================================*/
+
+
+.sub_encabezado{
+    display: flex;
+    justify-items: self-start;
+    background-color: #7D946D;
+    font-family: "Style Script";
+    padding: 10px 0;
+    text-align: center;
+    
+    height: 400px;
+    background-color: #C9B6B6;
+}
+
+
+.sub_encabezado>.sub_encabezado__texto{
+    margin: 0 15px;
+    text-decoration: none;
+   
+    font-size: 24px;
+    height: 50%;
+    width: 100%;
+
+
+}
+
+.sub_encabezado__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.sub_encabezado__texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.sub_encabezado__texto>h1{
+    font-size: 45px;
+    color: #2b2b2b;
+    width: 40%;
+    margin-top: 120px;
+}
+
+.sub_encabezado__texto>p{
+    font-size: 20px;
+    color: #2b2b2b;
+    width: 40%;
+}   
+
+#sub_imagen{
+    width: 460px; /* La imagen ocupará todo el ancho del contenedor */
+    height: 105%; /* Mantiene las proporciones de la imagen */
+
+}
+
+.conocer{
+
+width: 162px;
+height: 74px;
+font-size: 18px;
+font-family: "Style Script";
+
+background: rgba(125, 148, 109, 0.95);
+opacity: 0.85;
+border-radius: 7px;
+
 }
