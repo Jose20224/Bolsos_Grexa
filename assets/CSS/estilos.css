@@ -216,7 +216,7 @@ margin-bottom: 30px;
 .ofertas_1__contenedor .ofertas_1_img{
         width: 50%; /* Ajusta el ancho del contenedor */
         height: 70px; /* Ajusta la altura del contenedor */
-        background-image: url('assets/ICON/4.png'); /* Ruta de la imagen */
+        background-image: url('/assets/ICON/4.png'); /* Ruta de la imagen */
         background-size: cover; /* Hace que la imagen cubra todo el contenedor */
         background-position: center; /* Centra la imagen dentro del contenedor */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -278,7 +278,7 @@ main .main__colecion{
 .main__colecion__articulo>.favorito{
     position: relative;
     bottom: 125px;
-    left: 125px;
+    left: 10px;
 
 }
 .main__colecion__articulo image{
