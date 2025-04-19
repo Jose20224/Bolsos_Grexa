@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     height: 99vh;
-    background-color:rgba(146, 81, 41, 0.62);
+    background-color:#6a4026d7;
 }
 /* background: linear-gradient(to right, rgba(85, 44, 19, 0.8), rgba(255, 215, 0, 0.2)); */
 
@@ -77,22 +77,42 @@
     justify-content: center;
     width: 50%;
     height: 70%;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    color:white;
+    
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border:0.1px solid #4f4f4f;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 .inicio_session{
     position: relative;
     bottom: 20px;
-
+ 
 }
 
 .formulario{
     width: 100%;
     height: 250px;
 }
+
+.form-control{
+   background-color: #9f66425e;
+    border-color: rgb(128, 69, 32);
+   
+}
+
+.form-control::placeholder {
+    color: #a7a4a4; /* Cambia el color del placeholder */   
+}
+
+.form-control:focus {
+    color: #000; /* Cambia el color del texto ingresado */
+    border-color: #007BFF; /* Cambia el color del borde al interactuar */
+    outline: none; /* Opcional: elimina el contorno predeterminado */
+    /* background-color: #007BFF; cambia el color de fondo */
+}
+
 
 .correo{
     position: relative;
@@ -103,20 +123,28 @@
     right: 100px;
 }
 
+
+
 .olvido_contra{
     position: relative;
     right: 60px;
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color:#2b2b2b; /* Cambia el color del texto (ajústalo según tu diseño) */
-    color: grey;
+    color: rgb(183, 170, 170);
 }
 
 .buto_inicio{
-
+    opacity: 0.85;
+    border: none;
     width: 200px;
     height: 30px;
     border-radius: 10%;
     font-family: "Source Serif Pro";
     color: rgba(255, 255, 255);
     background: linear-gradient(to right,rgba(138, 80, 44, 1),rgba(90, 46, 18, 1));
+}
+
+.registrar_a{
+    color: white;
+    text-decoration:none;
 }
