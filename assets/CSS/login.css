@@ -1,104 +1,122 @@
-body {
+.body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #5a3a2e;
+    height: 99vh;
+    background-color:rgba(146, 81, 41, 0.62);
+}
+/* background: linear-gradient(to right, rgba(85, 44, 19, 0.8), rgba(255, 215, 0, 0.2)); */
+
+.navbar1 {
+    position: fixed; /* Fija el nav en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 10; /* Asegura que esté encima del resto */
+    
 }
 
-.container {
+.navbar1>.container2{
+    margin-left: 30px;
+   
+}
+
+/*==========================================================*/
+/*==========================================================*/
+
+.login-container {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    margin-top: -10px;
+    font-family: "Style Script";
+    padding: 10px 0;
+    text-align: center;
+    
+    height: 102vh;
+   
+}
+
+.image-container {
+    position: relative; /* Establece un contexto de posicionamiento */
+    width: 85vh; /* Ajusta el ancho del contenedor */
+   
+}
+
+.imagen-inferior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* La imagen ocupará todo el contenedor */
     height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    z-index: 1; /* Imagen de fondo */
 }
 
-.left-panel {
+.imagen-superior {
+    position: absolute;
+    top: 50px; /* Ajusta la posición vertical */
+    left: 220px; /* Ajusta la posición horizontal */
+    width: 100px; /* Ajusta el tamaño de la imagen superior */
+    z-index: 2; /* Imagen en primer plano */
+}
+
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    background: #a57b5b;
+    height: 100%;
+
+}
+
+.form-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-
-.logo {
-    font-size: 5rem;
-    font-weight: bold;
-    color: white;
-}
-
-h1 {
-    color: white;
-    font-size: 2rem;
-}
-
-.image-container img {
-    width: 80%;
-    border-radius: 10px;
-}
-
-.right-panel {
     width: 50%;
-    background: rgba(165, 123, 91, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-.login-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 10px;
-   
+.inicio_session{
+    position: relative;
+    bottom: 20px;
+
 }
 
-h2 {
-    color: white;
-    text-align: center;
-}
-
-label {
-    color: white;
-    display: block;
-    margin-top: 1rem;
-}
-
-input {
+.formulario{
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 0.5rem;
-    border: none;
-    border-radius: 5px;
+    height: 250px;
 }
 
-.forgot-password {
-    display: block;
-    text-align: right;
-    margin-top: 1rem;
-    color: white;
-    text-decoration: none;
+.correo{
+    position: relative;
+    right: 75px;
+}
+.pawor{
+    position: relative;
+    right: 100px;
 }
 
-.login-btn {
-    width: 100%;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    background-color: #5a3a2e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.olvido_contra{
+    position: relative;
+    right: 60px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color:#2b2b2b; /* Cambia el color del texto (ajústalo según tu diseño) */
+    color: grey;
 }
 
-.register-text {
-    text-align: center;
-    margin-top: 1rem;
-    color: white;
-}
+.buto_inicio{
 
-.register-text a {
-    color: #f8d6b8;
-    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10%;
+    font-family: "Source Serif Pro";
+    color: rgba(255, 255, 255);
+    background: linear-gradient(to right,rgba(138, 80, 44, 1),rgba(90, 46, 18, 1));
 }

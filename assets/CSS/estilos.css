@@ -8,7 +8,7 @@ body{
 }
 
 .header{
-    background-color: #7D946D;
+    background-color: rgba(85, 44, 19, 0.8);
     font-family: "Style Script";
     padding: 10px 0;
     text-align: center;
@@ -105,7 +105,6 @@ body{
 .sub_encabezado{
     display: flex;
     justify-items: self-start;
-    background-color: #7D946D;
     font-family: "Style Script";
     padding: 10px 0;
     text-align: center;
@@ -169,7 +168,7 @@ height: 40px;
 font-size: 18px;
 font-family: "Style Script";
 
-background: rgba(125, 148, 109, 0.95);
+background: rgba(132, 92, 60, 0.95);
 opacity: 0.85;
 border-radius: 7px;
 
@@ -185,7 +184,7 @@ margin-bottom: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #6C815D;
+    background:color-mix(in srgb, rgba(132, 92, 60, 1) 100%, rgba(255, 215, 0) 20%);
     font-family: "Sunflower";
     padding: 10px 0;
     text-align: center;
