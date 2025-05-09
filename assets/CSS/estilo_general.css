@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+.collapse{
+  margin-left: 70vh;
+
+}
+
+.icono{
+  position: absolute;
+  left: 240px;
+
+}
+
+.icono_img{
+  height: 90px;
+}
+
+.bg-light,.bg-body-tertiary{
+  background: transparent !important;
+
+}
+
+.nav-link{
+  font-family: "Style Script", cursive;
+  font-size: 20px;
+  
+}
+
+.nav-item>.borde{
+  position: relative;
+}
+
+.nav-item>.borde::before {
+  content: ""; /* Crea el pseudo-elemento */
+  position: absolute;
+  bottom: 30%;
+  left: 0; /* Alinea el borde al lado izquierdo */
+  width: 1.5px; /* Grosor del borde */
+  height: 40%; /* Largo del borde (ajústalo según lo que necesites) */
+  background-color: black; /* Color del borde */
+}
+
+.fondo{
+  background:#decfcf ;
+}
+
+.circulo{
+  width: 100px;
+  height: 100px;
+  background-color: #5c0707;
+  position: absolute;
+  
+}
+
+.N1{
+  top: 0;
+  left: 0;
+ border-radius: 0 0 100% 0;
+}
+
+.N2{
+  border-radius: 100% 0 0 0;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+.border_imagen_decore{
+  border-radius: 30%;
+}
+
+.img-fluid{
+  width: 280px;
+  height: 280px;
+  position: relative;
+  bottom: 20px;
+  right: 40px;
+  box-shadow: 15px 25px 3px 2px #752f2fac, 30px 35px 4px 3px #752f2f60;
+}
+
+.img_letras{
+  width: 260px;
+  height: 260px;
+}
+
+@media (max-width: 768px) {
+  .collapse{
+    margin-left: 0vh;
+  }
+  .icono{
+    position: relative;
+    left: 0;
+    
+  }
+
+  .circulo{
+    width: 50px;
+    height: 50px;
+    background-color: #5c0707;
+    position: absolute;
+    
+  }
+
+  .icono_img{
+    height: 68px;
+  }
+
+
+  .nav-item>.borde::before {
+    content: ""; /* Crea el pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Alinea el borde al lado izquierdo */
+    width: 0; /* Grosor del borde */
+    height: 0; /* Largo del borde (ajústalo según lo que necesites) */
+    background-color: black; /* Color del borde */
+  }
+
+
+.py-5{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+
+  .img-fluid{
+    width: 90px;
+    height: 90px;
+    right: 10px;
+    box-shadow: 10px 15px 3px 2px #752f2fac, 20px 23px 4px 3px #752f2f60;
+  }
+  
+  .img_letras{
+    width: 120px;
+    height: 120px;
+  }
+  
+
+
+
+}
