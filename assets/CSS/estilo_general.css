@@ -74,13 +74,15 @@
   height: 280px;
   position: relative;
   bottom: 20px;
-  right: 40px;
+  left: 90px;
   box-shadow: 15px 25px 3px 2px #752f2fac, 30px 35px 4px 3px #752f2f60;
 }
 
 .img_letras{
   width: 260px;
   height: 260px;
+  position: relative;
+  left: 150px;
 }
 
 @media (max-width: 768px) {
@@ -126,13 +128,14 @@
   .img-fluid{
     width: 90px;
     height: 90px;
-    right: 10px;
+    left: -5px;
     box-shadow: 10px 15px 3px 2px #752f2fac, 20px 23px 4px 3px #752f2f60;
   }
   
   .img_letras{
     width: 120px;
     height: 120px;
+     left: 10px;
   }
   
 
