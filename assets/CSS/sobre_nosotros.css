@@ -1,0 +1,90 @@
+.info-section_sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 60px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: -8px 8px 2px rgba(0, 0, 0, 0.837);
+}
+
+.info-text h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: #4a3f35;
+}
+
+.info-text p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: justify;
+}
+
+.sobra_1{ 
+    box-shadow: -30px 40px 5px rgba(54, 9, 9, 1);
+    border-radius: 20px;
+}
+
+.sobra_2{ 
+    box-shadow: 30px 40px 5px rgba(54, 9, 9, 1);
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .info-section_sobre-nosotros {
+        margin-left: 30px;
+    }
+
+
+
+    .img_t{
+        width: 100px;
+        height: 100px;
+    }
+
+    
+.sobra_1{ 
+    box-shadow: -10px 15px 5px rgba(54, 9, 9, 1);
+    border-radius: 20px;
+}
+
+.sobra_2{ 
+    box-shadow: 10px 15px 5px rgba(54, 9, 9, 1);
+    border-radius: 20px;
+}
+
+.ti_sobre{
+    font-size: 0.7rem;
+}
+
+.txt_sobre{
+    font-size: 0.5rem;
+}
+.col ul li{
+    font-size: 0.7rem;
+}
+
+.info-text p{
+    font-size: 0.7rem;
+}
+
+.info-item img {
+    width: 60px;
+    height: 60px;
+   
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.837);
+}
+}

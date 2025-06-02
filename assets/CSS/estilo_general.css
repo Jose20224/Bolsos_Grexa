@@ -70,7 +70,7 @@
 }
 
 .img-fluid{
-  width: 280px;
+  width: 270px;
   height: 280px;
   position: relative;
   bottom: 20px;
@@ -175,7 +175,7 @@
 
 
   .img-fluid{
-    width: 90px;
+    width: 85px;
     height: 90px;
     left: -5px;
     box-shadow: 10px 15px 3px 2px #752f2fac, 20px 23px 4px 3px #752f2f60;
