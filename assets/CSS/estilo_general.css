@@ -7,7 +7,7 @@
 
 .icono{
   position: absolute;
-  left: 240px;
+  left: 80px;
 
 }
 
@@ -41,7 +41,7 @@
 }
 
 .fondo{
-  background:#decfcf ;
+   background:#decfcf ; 
 }
 
 .circulo{
@@ -84,6 +84,55 @@
   position: relative;
   left: 150px;
 }
+
+
+
+ .placeholder-box {
+      background-color: #d9d9d9;
+      border-radius: 10px;
+      min-height: 200px;
+    }
+
+    footer {
+      background-color: #e8d6d6;
+      padding: 40px 0;
+    }
+    .footer-logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #5a1f1f;
+    }
+    .footer-logo span {
+      font-size: 1.2rem;
+      font-family: 'Times New Roman', serif;
+    }
+    .footer-section h6 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-social-icons i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      color: #000;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: 30px;
+      color: #333;
+    }
+
+
+
+
 
 @media (max-width: 768px) {
   .collapse{

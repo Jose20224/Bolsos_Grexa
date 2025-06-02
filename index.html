@@ -27,9 +27,9 @@
 </head>
 <body>
     
-    <div class="fondo">
-       <div class="circulo N1"></div>
-       
+    <div class="fondo_index">
+       <!-- <div class="circulo N1"></div>
+        -->
 
     <header class="position-relative bg-light py-4 overflow-hidden">
 
@@ -49,9 +49,10 @@
           <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
           <li class="nav-item"><a href="colecciones.html" class="nav-link borde">Colecciones</a></li>
           <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde">Crea tu estilo</a></li>
-          <li class="nav-item"><a href="#" class="nav-link borde">Sobre nosotros</a></li>
+          <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde">Sobre nosotros</a></li>
           <li class="nav-item"><a href="#" class="nav-link borde">Blog</a></li>
           <li class="nav-item"><a href="#" class="nav-link borde">Favoritos</a></li>
+           <li class="nav-item"><a href="prueba.html" class="nav-link borde">prueba</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
           <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-cart"></i></a></li>
@@ -68,7 +69,7 @@
       <div class="row align-items-center">
         <!-- Texto -->
         <div class="col-6 mb-4 mb-md-0">
-        <img class="img_letras" src="assets/ICON/letras_index.svg" alt="">
+        <img class="img_letras" src="assets/ICON/letras_index2.svg" alt="">
         </div>
         <!-- Imagen -->
         <div class="col-6 ">
@@ -82,56 +83,109 @@
         </div>
       </div>
     </div>
-    <div class="circulo N2"></div>
+    <!-- <div class="circulo N2"></div> -->
   </section>
-
-
   </div>
 
+  <br>
+
   <!-- ========== BARRA DE BENEFICIOS ========== -->
-  <section class="py-4 bg-pink">
-    <div class="container ">
-      <div class="row text-center gy-4">
-        <div class="col-md-3">
-          <i class="bi bi-truck fs-2 text-maroon"></i>
-          <h6 class="fw-semibold mt-2">Delivery Gratis</h6>
-          <p class="small mb-0">Nos encargamos de tu entrega a tiempo</p>
+  <section class="py-4 info bg-pink">
+   <div class="container  my-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      <!-- Delivery Gratis -->
+      <div class="col">
+        <div class="info-box">
+          <div class="info-icon">
+            <img class="deli" src="assets/ICON/deliveri_icon.svg">
+          </div>
+          <div class="info-content">
+            <div class="info-title">Delivery Gratis</div>
+            <p class="info-description">Nos encargaremos completamente de tu entrega a tiempo.</p>
+          </div>
         </div>
-        <div class="col-md-3">
-          <i class="bi bi-shield-check fs-2 text-maroon"></i>
-          <h6 class="fw-semibold mt-2">Garantía asegurada</h6>
-          <p class="small mb-0">Cubrimos defectos de fabricación</p>
+      </div>
+      <!-- Garantía asegurada -->
+      <div class="col">
+        <div class="info-box">
+          <div class="info-icon">
+          <img class="icon_seccion" src="assets/ICON/garanti_icon.svg">
+          </div>
+          <div class="info-content">
+            <div class="info-title">Garantía asegurada</div>
+            <p class="info-description">Cubrimos cualquier defecto de fabricación. Consulta los términos para más detalles.</p>
+          </div>
         </div>
-        <div class="col-md-3">
-          <i class="bi bi-headset fs-2 text-maroon"></i>
-          <h6 class="fw-semibold mt-2">Centro de ayuda</h6>
-          <p class="small mb-0">Respuestas sobre envíos y garantías</p>
+      </div>
+      <!-- Centro de ayuda -->
+      <div class="col">
+        <div class="info-box">
+          <div class="info-icon">
+            <img class="icon_seccion" src="assets/ICON/ayuda_icon.svg">
+          </div>
+          <div class="info-content">
+            <div class="info-title">Centro de ayuda</div>
+            <p class="info-description">Encuentra respuestas sobre envíos, garantías y más, al número 2220-0380.</p>
+          </div>
         </div>
-        <div class="col-md-3">
-          <i class="bi bi-credit-card fs-2 text-maroon"></i>
-          <h6 class="fw-semibold mt-2">Métodos de pago</h6>
-          <p class="small mb-0">Tarjeta, transferencia o billeteras</p>
+      </div>
+      <!-- Métodos de pagos -->
+      <div class="col">
+        <div class="info-box">
+          <div class="info-icon">
+            <img class="icon_seccion" src="assets/ICON/metodo_pago.svg">
+          </div>
+          <div class="info-content">
+            <div class="info-title">Métodos de pagos</div>
+            <p class="info-description">Paga con tarjeta, transferencia o billeteras digitales.</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
 
+  <br>
 
 <main>
+
+  <div class="container">
+    <div class="search-container">
+      <form class="d-flex search-box">
+        <input class="form-control me-2" type="search" placeholder="¿Que quieres comprar hoy?" aria-label="¿Que quieres comprar hoy?">
+        <button class="btn btn-outline-secondary" type="submit">
+          <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <br>
 
         <section class="py-5">
   <div class="container text-center">
     
     <div class="row justify-content-center g-4">
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="placeholder-box"></div>
+      <div class="s col-12 col-sm-6 col-md-4">
+        <div class="img-container">
+    <h4 class="titul">Bolsos casuales</h4>
+    <img class="img_catalogo" src="assets/Catalogo_img/bol_casual.svg" alt="">
+  </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="placeholder-box"></div>
+      <div class="s col-12 col-sm-6 col-md-4">
+        <div class="img-container">
+         <h4 class="titul2">Edición Limitada</h4>
+         <img class="img_catalogo" src="assets/Catalogo_img/edicion_limit.svg" alt="">
       </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="placeholder-box"></div>
       </div>
+
+      <div class="s col-12 col-sm-6 col-md-4">
+        <div class="img-container">
+        <h4 class="titul3">Mochilas para hombre</h4>
+        <img class="img_catalogo" src="assets/Catalogo_img/mochi_h.svg" alt="">
+      </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -144,7 +198,9 @@
         <!-- Sección Luxe -->
         <div class="row align-items-center mb-5">
           <div class="col-md-6 mb-4 mb-md-0">
-            <div class="img-placeholder"></div>
+            <!-- <i class="bi bi-heart"></i> -->
+            <i class="bi corazon bi-heart-fill"></i>
+            <img class="img_t" src="assets/Catalogo_img/Luxe.svg" alt="">
           </div>
           <div class="col-md-6">
             <h3 class="mb-3">Luxe</h3>
@@ -159,7 +215,9 @@
         <!-- Sección Opal (texto a la izquierda, imagen a la derecha) -->
         <div class="row align-items-center">
           <div class="col-md-6 order-md-2 mb-4 mb-md-0">
-            <div class="img-placeholder"></div>
+            <!-- <i class="bi bi-heart"></i> -->
+            <i class="bi corazon2 bi-heart-fill"></i>
+            <img class="img_t" src="assets/Catalogo_img/Opal.svg" alt="">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 class="mb-3">Opal</h3>
