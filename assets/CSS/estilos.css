@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Style+Script&display=swap');
 
 .fondo_index{
     background: linear-gradient(135deg,#cdc4c4,#a68b9a,#a66363);
 
 }
+
+.sp{
+  position: relative;
+  left: 100px;
+}
+.sp2{
+  width: 40%;
+  margin-left: 100px;
+}
+
 .espacio{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -18,7 +29,8 @@
 
 /* Botón personalizado en forma de píldora */
 .btn-custom {
-  background-color: #e0e0e0;
+  background-color: rgba(54, 9, 9, 1);
+  color: white;
   border: none;
   border-radius: 50px;
   padding: 0.5rem 1.5rem;
@@ -34,6 +46,26 @@ p {
   line-height: 1.6;
 }
 
+
+.video_div{
+   
+    overflow: hidden;
+    position: relative;
+
+    width: 270px;
+  height: 280px;
+  position: relative;
+  bottom: 20px;
+  left: 90px;
+  box-shadow: 15px 25px 3px 2px #752f2fac, 30px 35px 4px 3px #752f2f60;
+}
+
+.video_vi{
+   width: 100%;
+    position: absolute;
+    bottom: -60px;
+    
+}
 /*===================================================================*/
 /*===================================================================*/
 .grande{
@@ -42,6 +74,19 @@ p {
 
 /*===================================================================*/
 /*===================================================================*/
+.img_recomendada{
+  border-radius: 20px;
+}
+
+
+.img_popular,.img_popular2 {
+  width: 100%;          /* Hace que la imagen se adapte al contenedor */
+  max-width: 300px;     /* Cambia este valor al tamaño máximo que quieras */
+  height: auto;         /* Ajusta la altura automática */
+  object-fit: cover;    /* Ajusta el recorte si la imagen no encaja perfectamente */
+  border-radius: 8px;   /* Esquinas redondeadas opcionales */
+}
+
 
 /*===================================================================*/
 /*===================================================================*/
@@ -144,6 +189,24 @@ p {
   z-index: -1;
 }
 
+.img_ajuste{
+border-radius: 20px;
+}
+
+.descuento_si{
+      position: relative;
+      font-size: 2.5rem;
+      color: rgba(109, 32, 33, 1);
+      font-family: "Style Script", cursive;
+      right: 150px;
+      top: 40px;
+      transform: rotate(-45deg);
+      display: inline-block;
+}
+
+.border_ajuste{
+  box-shadow: 10px 10px 6px rgba(6, 6, 6, 0.456);
+}
 /*===================================================================*/
 /*===================================================================*/
 .corazon,.corazon2{
@@ -191,6 +254,22 @@ left: 420px;
   width: 50px;
 }
 
+
+.video_div{
+
+    width: 85px;
+    height: 90px;
+    left: -5px;
+    box-shadow: 10px 15px 3px 2px #752f2fac, 20px 23px 4px 3px #752f2f60;  
+  
+}
+
+.video_vi{
+   
+    bottom: -30px;
+    
+}
+
  .info-content .info-title {
       font-weight: bold;
       margin-bottom: 5px;
@@ -209,6 +288,27 @@ left: 420px;
   height: 260px; /* alto del contenedor (ajustable) */
   overflow: hidden;
   border-radius: 5%;
+}
+
+.titulo_recomendados{
+  font-size: 1.2rem;
+}
+
+.img_ajuste{
+  width: 80px;
+  height: 120px;
+  object-fit: cover; /* para que la imagen se ajuste bien */
+}
+
+.sp2{
+  width: 40%;
+  margin-left: 10px;
+}
+
+.img_popular2{
+          
+  max-width: 120px;     /* Cambia este valor al tamaño máximo que quieras */
+  
 }
 
 .img-container img.img_catalogo {
@@ -252,6 +352,14 @@ left: 235px;
 .corazon2{
   top: 70px;
   left: 30px;
+}
+
+
+.descuento_si{
+    font-size: 1.5rem;
+      right: 30px;
+      top: 20px;
+      
 }
 
 }

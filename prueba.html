@@ -2,82 +2,244 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Valores, Proceso y Equipo</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<style>
-  body {
-  font-family: 'Georgia', serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-  margin: 2rem;
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grexa</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Fuente script para el hero -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link href="assets/CSS/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/estilo_general.css">
+
+  <style>
+.fondo_sobre_nosotros {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
 }
 
-.info-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.info-item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
+.fondo_sobre_nosotros video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
   object-fit: cover;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  z-index: 0;
 }
 
-.info-text h3 {
-  font-size: 1rem;
-  margin: 0 0 0.5rem 0;
-  color: #4a3f35;
+/* Navbar encima del fondo */
+.navbar {
+  position: relative;
+  z-index: 2;
 }
 
-.info-text p {
-  font-size: 0.9rem;
+/* Menú overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-overlay.active {
+  display: flex;
+}
+
+.menu-overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay-menu {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  text-align: justify;
+  text-align: center;
 }
 
-</style>
+.overlay-menu li {
+  margin: 15px 0;
+}
+
+.overlay-menu a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.overlay-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar menú horizontal en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+
+  </style>
+</head>
 <body>
-  <section class="info-section">
-    <div class="info-item">
-      <img src="icono-valores.png" alt="Valores">
-      <div class="info-text">
-        <h3>Valores:</h3>
-        <p>
-          Nos enfocamos en la calidad, tradición, innovación, compromiso, honestidad y pasión en todos nuestros bolsos.
-        </p>
-      </div>
-    </div>
 
-    <div class="info-item">
-      <img src="icono-proceso.png" alt="Proceso de creación">
-      <div class="info-text">
-        <h3>Proceso de creación:</h3>
-        <p>
-          Selección de materiales, diseño, corte, ensamblaje, costura, acabados, control de calidad, entrega al cliente.
-        </p>
-      </div>
-    </div>
 
-    <div class="info-item">
-      <img src="icono-equipo.png" alt="Equipo">
-      <div class="info-text">
-        <h3>Equipo (Taller Familiar):</h3>
-        <p>
-          Somos un taller familiar donde cada miembro aporta su experiencia en diseño, costura, acabados y atención al cliente, trabajando con pasión, calidad y compromiso.
-        </p>
+
+
+ <div class="fondo_sobre_nosotros">
+  <video autoplay muted loop>
+    <source src="/assets/Video/se.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <!-- Navbar de Bootstrap -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a href="#" class="d-flex icono align-items-center text-decoration-none">
+          <img class="icono_img" src="assets/ICON/logo.svg" alt="Logo Frena">
+        </a>
+        <!-- Botón hamburguesa (solo visible en pantallas pequeñas) -->
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú normal (visible en pantallas grandes) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+              
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="colecciones.html" class="nav-link borde">Colecciones</a></li>
+          <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde">Crea tu estilo</a></li>
+          <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde">Sobre nosotros</a></li>
+          <li class="nav-item"><a href="#" class="nav-link borde">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link borde">Favoritos</a></li>
+           <li class="nav-item"><a href="#" class="nav-link borde">Contactanos</a></li>
+           <li class="nav-item"><a href="prueba.html" class="nav-link borde">prueba</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person"></i></a></li>
+          <li class="nav-item position-relative">
+  <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <i class="bi bi-cart"></i>
+    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+  </a>
+</li>
+
+        </ul>
+        
+    </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menú overlay (pantallas pequeñas) -->
+  <div id="menuOverlay" class="menu-overlay">
+    <button class="close-btn" aria-label="Cerrar menú">&times;</button>
+    <ul class="overlay-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="colecciones.html">Colecciones</a></li>
+      <li><a href="crea_tu_estilo.html">Crea tu estilo</a></li>
+      <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Favoritos</a></li>
+      <li><a href="#">Contáctanos</a></li>
+      <li><a href="prueba.html">Prueba</a></li>
+      <li><a href="#"><i class="bi bi-search"></i></a></li>
+      <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+      <li>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <i class="bi bi-cart"></i>
+          <span id="cart-count" class="badge rounded-pill bg-danger">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Aquí puedes seguir con tu hero, secciones y demás contenido -->
+
+<!-- Botón de ejemplo para agregar al carrito -->
+<section class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <img src="assets/Catalogo_img/bol_casual.svg" class="card-img-top" alt="Bolso casual">
+        <div class="card-body">
+          <h5 class="card-title">Bolso Casual</h5>
+          <p class="card-text">Precio: $30.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Bolso Casual', 30, 'assets/Catalogo_img/bol_casual.svg')">Agregar al carrito</button>
+        </div>
       </div>
     </div>
-  </section>
+    <!-- Repite para más productos -->
+  </div>
+</section>
+
+<!-- Modal del carrito -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cartItems" class="list-group"></ul>
+      </div>
+      <div class="modal-footer">
+        <strong>Total: $<span id="cartTotal">0</span></strong>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  const toggler = document.querySelector('.navbar-toggler');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const closeBtn = document.querySelector('.close-btn');
+
+  toggler.addEventListener('click', () => {
+    menuOverlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+  });
+</script>
+
+
+
+
 </body>
 </html>
