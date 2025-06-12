@@ -113,7 +113,7 @@ p {
      height: 100%;
     }
     .info-icon {
-      font-size: 2rem;
+      font-size: 1rem;
       margin-right: 10px;
       color: #000;
       flex-shrink: 0;
@@ -121,10 +121,10 @@ p {
     .info-content .info-title {
       font-weight: bold;
       margin-bottom: 5px;
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
     .info-content .info-description {
-      font-size: 0.85rem;
+      font-size: 0.65rem;
       color: #333;
       margin: 0;
     }
@@ -273,11 +273,11 @@ left: 420px;
  .info-content .info-title {
       font-weight: bold;
       margin-bottom: 5px;
-      font-size: 0.73rem;
+      font-size: 0.53rem;
     }
 
  .info-content .info-description {
-      font-size: 0.55rem;
+      font-size: 0.45rem;
     
       margin: 0;
     }

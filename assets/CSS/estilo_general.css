@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suranna&family=Zen+Kurenaido&display=swap');
+
 .collapse{
   margin-left: 70vh;
 
@@ -22,8 +24,8 @@
 }
 
 .nav-link{
-  font-family: "Style Script", cursive;
-  font-size: 20px;
+   font-family: "Zen Kurenaido", sans-serif;
+  font-size: 16 px;
   
 }
 
@@ -75,11 +77,15 @@
 /* Menú overlay */
 .menu-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.375);
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.45rem);
+
   color: white;
   z-index: 12;
   display: none;
@@ -299,11 +305,12 @@
     width: 120px;
     height: 120px;
      left: 10px;
+     margin-right: 40px;
   }
   
 .bt_ajuste{
   font-size: 0.6rem;
-  width: 120px;
+  width: 140px;
   height: 30px;
 }
 

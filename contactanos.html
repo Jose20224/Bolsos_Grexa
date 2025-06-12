@@ -24,6 +24,7 @@
   <!-- Tu CSS personalizado -->
   <link rel="stylesheet" href="assets/CSS/estilo_general.css">
   <link href="assets/CSS/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/CSS/contactanos.css">
 </head>
 <body>
     
@@ -52,7 +53,7 @@
           <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde">Sobre nosotros</a></li>
           <li class="nav-item"><a href="#" class="nav-link borde">Blog</a></li>
           <li class="nav-item"><a href="#" class="nav-link borde">Favoritos</a></li>
-          <li class="nav-item"><a href="contactanos.html" class="nav-link borde">Contactanos</a></li>
+          <li class="nav-item"><a href="colecciones.html" class="nav-link borde">Coleccion</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
           <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-cart"></i></a></li>
@@ -69,7 +70,7 @@
       <div class="row align-items-center">
         <!-- Texto -->
         <div class="col-6 mb-4 mb-md-0">
-        <img class="img_letras" src="assets/ICON/colecciones.svg" alt="">
+        <img class="img_letras no" src="assets/ICON/colecciones.svg" alt="">
         </div>
         <!-- Imagen -->
         <div class="col-6 ">
@@ -77,7 +78,7 @@
             <img 
               src="assets/ICON/colecccion_img.svg"
               alt="Bolso destacado"
-              class="img-fluid rounded"
+              class="img-fluid rounded si"
             >
           </div>
         </div>
@@ -92,74 +93,75 @@
   <!-- ========== BARRA DE BENEFICIOS ========== -->
   <main>
 
-      <section class="py-5">
-  <div class="container text-center">
-    <h5 class="mb-4 titulo_coleccion_init">Para Mujer</h5>
-    <div class="row justify-content-center g-4">
-      <div class="col-4 conte_titulo">
-        <h4 class="titulo_coleccion">Mochilas</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Mochila_mujer.svg" alt="">
-      </div>
-      <div class="col-4 conte_titulo">
-        <h4 class="titulo_coleccion">Bolsos</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Bolso_mujer.svg" alt="">
-      </div>
-      <div class="col-4 conte_titulo">
-        <h4 class="titulo_coleccion">Accesorios</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Acce_mujer.svg" alt="">
-      </div>
+    
+<div class="container">
+    <!-- Formulario de Contacto -->
+    <div class="card contacto">
+      <h2>Contacta con nosotros</h2>
+      <p>Envíanos un mensaje, te atenderemos muy pronto</p>
+      <form>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Nombre completo:</label>
+            <input type="text" placeholder="Nombre completo">
+          </div>
+          <div class="input-group">
+            <label>Apellido completo:</label>
+            <input type="text" placeholder="Apellido completo">
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Correo electrónico:</label>
+            <input type="email" placeholder="Correo electrónico">
+          </div>
+          <div class="input-group">
+            <label>Teléfono:</label>
+            <input type="text" placeholder="Teléfono">
+          </div>
+        </div>
+        <div class="input-group full">
+          <label>Escriba su mensaje</label>
+          <textarea placeholder="Escriba su mensaje"></textarea>
+        </div>
+        <button class="enviar" type="submit">Enviar</button>
+      </form>
     </div>
-<br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
 
-  </div>
-</section>
-<br>
-            <section class="py-5">
-  <div class="container text-center">
-    <h5 class="mb-4 titulo_coleccion_init">Para hombre</h5>
-    <div class="row justify-content-center g-4">
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Bolsos</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Bolso_Hombre.svg" alt="">
+    <!-- Información de ayuda -->
+    <div class="card ayuda">
+      <h2>¿Necesitas ayuda?</h2>
+      <p>Puedes llamarnos o enviarnos un mensaje, te atenderemos muy pronto</p>
+      <div class="info-icons">
+    <div class="info_co">
+      <div class="circle">
+        <i class="bi bi-whatsapp"></i>
       </div>
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Mochilas</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Mochila_Hombre.svg" alt="">
-      </div>
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Accesorios</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Acce_Hombre.svg" alt="">
-      </div>
+      <p>+505 8789 - 9875<br>+505 2222 - 8839</p>
     </div>
-    <br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
-  </div>
-</section>
-<br>
-            <section class="py-5">
-  <div class="container text-center">
-    <h5 class="mb-4 titulo_coleccion_init">Para ocasiones especiales</h5>
-    <div class="row justify-content-center g-4">
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Viajes</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Viaje_especial.svg" alt="">
+    <div class="info_co">
+      <div class="circle">
+        <i class="bi bi-envelope-at-fill"></i>
       </div>
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Deportes</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/Despor_especial.svg" alt="">
-      </div>
-      <div class="col-4">
-        <h4 class="titulo_coleccion">Accesorios</h4>
-        <img class="img_ajuste" src="assets/coleccion_img/acce_especial.svg" alt="">
-      </div>
+      <p>InfoTallerGresia@gmail.com<br>AyudaTallerGresia@gmail.com</p>
     </div>
-    <br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
+    <div class="info_co">
+      <div class="circle">
+        <i class="bi bi-geo-alt"></i>
+      </div>
+      <p>Ubicado en Carretera<br>a Masaya km 11</p>
+    </div>
   </div>
-</section>
 
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.410915984873!2d-86.231869!3d12.120065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzEyLjIiTiA4NsKwMTMnNTQuNyJX!5e0!3m2!1ses!2sni!4v1710000000000" width="100%" height="150" style="border:0;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  
   </main>
+
 
 <br>
   <!-- Footer -->

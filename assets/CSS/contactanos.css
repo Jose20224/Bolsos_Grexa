@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #c4a79a;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 450px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #ad8e83;
+  color: #fff;
+}
+
+.input-group textarea {
+  height: 80px;
+  resize: none;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.full {
+  width: 100%;
+}
+
+button {
+  background-color: #b0958a;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.ayuda .info-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.no{
+  margin-right: 450px;
+}
+
+
+.info-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* Esto evita que se vayan a otra línea */
+  overflow-x: auto;   /* Permite deslizar horizontalmente en pantallas pequeñas */
+  padding-bottom: 10px;
+}
+
+.info_co {
+  text-align: center;
+  min-width: 120px; /* Esto asegura que no se encojan demasiado */
+  background: #c4a79a;
+}
+
+.circle {
+  background-color: #b29589;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+}
+
+.circle i {
+  font-size: 50px;
+  color: #3d2a2b;
+  
+}
+
+.info p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #2d1e1f;
+}
+
+/* Ya no es necesario el media query para .info-icons */
+
+
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+.no{
+  margin-right: 150px;
+}
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 1rem;
+  }
+
+   .enviar {
+    font-size: 1rem;
+  } 
+}
