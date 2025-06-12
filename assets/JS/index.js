@@ -1,11 +1,23 @@
-let cart = [];
-let total = 0;
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let total = parseFloat(localStorage.getItem('total')) || 0;
+
+// Inicializa contador y renderiza carrito al cargar
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('cart-count').innerText = cart.length;
+  renderCart();
+});
+
+function saveCart() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem('total', total.toString());
+}
 
 function addToCart(name, price, image) {
   cart.push({ name, price, image });
   total += price;
 
   document.getElementById('cart-count').innerText = cart.length;
+  saveCart(); // Guardamos en localStorage
   renderCart();
 }
 
@@ -36,5 +48,43 @@ function removeFromCart(index) {
   cart.splice(index, 1);
 
   document.getElementById('cart-count').innerText = cart.length;
+  saveCart(); // Guardamos después de borrar
   renderCart();
+}
+
+
+
+function comprar() {
+  if (cart.length === 0) {
+    showAlert("Tu carrito está vacío", "warning");
+    return;
+  }
+
+  // Limpiar carrito y localStorage
+  cart = [];
+  total = 0;
+  saveCart();
+  renderCart();
+  document.getElementById('cart-count').innerText = 0;
+
+  // Mostrar alerta de éxito
+  showAlert("¡Compra exitosa!", "success");
+}
+
+// Mostrar alerta con estilo glass
+function showAlert(message, type = "success") {
+  const alert = document.createElement('div');
+  alert.className = `glass-alert ${type}`;
+  alert.innerText = message;
+
+  document.body.appendChild(alert);
+
+  setTimeout(() => {
+    alert.classList.add('show');
+  }, 100); // para permitir transición
+
+  setTimeout(() => {
+    alert.classList.remove('show');
+    setTimeout(() => alert.remove(), 500);
+  }, 3000);
 }

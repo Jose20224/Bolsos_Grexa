@@ -12,44 +12,44 @@
 </head>
 <body class="body">
    
-<nav class="navbar1">
+<!-- <nav class="navbar1">
   <br>
   <div class="container2">
     <a href="index.html">
     <img src="assets/ICON/flecha.svg" alt="Bootstrap" width="30" height="24" alt="">
   </a>
 </div>
-</nav>
+</nav> -->
     
 
 
       <div class="login-container">
         <div class="image-container">
-            <img src="assets/ICON/2.svg" alt="Imagen superior" class="imagen-superior">
-            <img src="assets/ICON/fondo_login.svg" alt="Imagen inferior" class="imagen-inferior">
+            
+            <img src="assets/img/login.svg" alt="Imagen inferior" class="imagen-inferior">
         </div>
         <div class="contenido">
             <div class="form-container">
                 <h2 class="inicio_session">Inicio de sesión</h2>
-                <form class="formulario" action="index.html" >
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label correo">Correo Electronico</label>
-                      <input placeholder="Example@gmail.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">            
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label pawor">Contraseña</label>
-                      <input placeholder="Ingresa tu  Contraseña " type="password" l class="form-control" id="exampleInputPassword1">
-                    </div>
-                    
-                    <div class="mb-3">
-                     <a class="olvido_contra" href="#">¿Olvidó su contraseña? <i class="bi bi-check-circle"></i></a>
-                    </div>
+                <div class="login-container">
+    <form>
+      <label for="email">Ingresa tu correo:</label>
+      <input type="email" id="email" placeholder="Example@gmail.com" required>
 
-                    <button class="buto_inicio">Iniciar sesion</button>
-                    <br>
-                    <br>
-                    <span>¿Aún no tienes cuenta?<a class="registrar_a" href=""> Regístrate</a></span>
-                  </form>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" placeholder="Ingresa tu Contraseña" required>
+
+      <div class="forgot-password">
+        ¿Olvidó su contraseña? <i>✔</i>
+      </div>
+
+      <button type="submit" class="login-btn">Iniciar sesión</button>
+
+      <div class="register-link">
+        ¿Aún no tienes cuenta? <a href="#">Regístrate</a>
+      </div>
+    </form>
+  </div>
             </div>
         </div>
       </div>

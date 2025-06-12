@@ -1,10 +1,13 @@
-.body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 99vh;
-    background-color:#6a4026d7;
-}
+
+    body {
+    
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9d5d3;
+      display: flex;
+      
+      height: 100vh;
+    }
+
 /* background: linear-gradient(to right, rgba(85, 44, 19, 0.8), rgba(255, 215, 0, 0.2)); */
 
 .navbar1 {
@@ -32,8 +35,10 @@
     padding: 10px 0;
     text-align: center;
     
-    height: 102vh;
    
+      border-radius: 15px;
+     
+      backdrop-filter: blur(5px);
 }
 
 .image-container {
@@ -46,8 +51,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* La imagen ocupará todo el contenedor */
-    height: 100%;
+    width: 85%; /* La imagen ocupará todo el contenedor */
+    height: 100vh;
     object-fit: cover; /* Ajusta la imagen sin distorsión */
     z-index: 1; /* Imagen de fondo */
 }
@@ -148,3 +153,84 @@
     color: white;
     text-decoration:none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.login-container input {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border: 2px solid #964b36;
+      border-radius: 8px;
+      background-color: #fff;
+      font-size: 1rem;
+    }
+
+    .forgot-password {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      color: #5c2a22;
+      font-size: 0.9rem;
+    }
+
+    .forgot-password i {
+      margin-left: 0.4rem;
+    }
+
+
+
+
+
+
+.login-btn {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #8b0000, #dcbdbd);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .login-btn:hover {
+      transform: scale(1.03);
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .register-link a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 1.5rem;
+      }
+      .login-btn {
+        font-size: 0.95rem;
+      }
+    }
