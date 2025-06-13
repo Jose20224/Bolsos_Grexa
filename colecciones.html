@@ -22,8 +22,8 @@
   >
 
   <!-- Tu CSS personalizado -->
-  <link rel="stylesheet" href="assets/CSS/estilo_general.css">
   <link href="assets/CSS/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/estilo_general.css">
 </head>
 <body>
 
@@ -59,6 +59,9 @@
   </div>
 </div>
 
+<div id="alertaGlass" class="glass-alert">
+  🚧 ¡Función disponible próximamente!
+</div>
 
     
     <div class="fondo">
@@ -149,7 +152,7 @@
       </div>
     </div>
 <br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
+    <button class="btn btn-light btn-custom bt_ajuste" onclick="mostrarAlerta()">Ver más <i class="bi bi-arrow-right"></i></button>
 
   </div>
 </section>
@@ -172,7 +175,7 @@
       </div>
     </div>
     <br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
+    <button class="btn btn-light btn-custom bt_ajuste" onclick="mostrarAlerta()">Ver más <i class="bi bi-arrow-right"></i></button>
   </div>
 </section>
 <br>
@@ -194,7 +197,7 @@
       </div>
     </div>
     <br>
-    <button class="btn btn-light btn-custom bt_ajuste">Ver más <i class="bi bi-arrow-right"></i></button>
+    <button class="btn btn-light btn-custom bt_ajuste" onclick="mostrarAlerta()">Ver más <i class="bi bi-arrow-right"></i></button>
   </div>
 </section>
 
@@ -240,6 +243,8 @@
     </div>
   </div>
 </footer>
+
+
 
   <!-- Bootstrap JS -->
   <script

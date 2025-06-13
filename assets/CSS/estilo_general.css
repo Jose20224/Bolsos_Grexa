@@ -262,8 +262,55 @@ height: 85vh;
       margin-top: 30px;
       color: #333;
     }
+/* Botón con degradado azul claro */
+.btn-proximamente {
+  padding: 0.6rem 1.3rem;
+  background: linear-gradient(to right, #3ea0ff, #6ccfff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
+.btn-proximamente:hover {
+  background: linear-gradient(to right, #6ccfff, #3ea0ff);
+}
 
+/* Alerta centrada con efecto glass en azul claro */
+.glass-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(62, 160, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #060606;
+  padding: 1.2rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(108, 207, 255, 0.3);
+  font-weight: 600;
+  z-index: 9999;
+  display: none;
+  max-width: 90%;
+  text-align: center;
+  animation: fadeInScale 2.4s ease;
+}
+
+/* Animación suave */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 
 
 

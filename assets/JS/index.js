@@ -88,3 +88,13 @@ function showAlert(message, type = "success") {
     setTimeout(() => alert.remove(), 500);
   }, 3000);
 }
+
+
+  function mostrarAlerta() {
+    const alerta = document.getElementById('alertaGlass');
+    alerta.style.display = 'block';
+
+    setTimeout(() => {
+      alerta.style.display = 'none';
+    }, 3000);
+  }
