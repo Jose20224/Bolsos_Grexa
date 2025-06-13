@@ -15,7 +15,9 @@
 }
 
 .icono_img{
-  height: 90px;
+  height: 80px;
+  position: relative;
+  top: 15px;
 }
 
 .bg-light,.bg-body-tertiary{
@@ -31,6 +33,11 @@
 
 .nav-item>.borde{
   position: relative;
+
+}
+
+.nav-item>.color{
+  color: white;
 }
 
 .nav-item>.borde::before {
@@ -40,7 +47,7 @@
   left: 0; /* Alinea el borde al lado izquierdo */
   width: 1.5px; /* Grosor del borde */
   height: 40%; /* Largo del borde (ajústalo según lo que necesites) */
-  background-color: black; /* Color del borde */
+  background-color: rgb(255, 255, 255); /* Color del borde */
 }
 
 .fondo{
@@ -48,7 +55,21 @@
 
 }
 
+.puede{
+  width: 100%;
+  height: 85vh;
+}
 
+.imag_fondo_pagina{
+    position: absolute;      /* O fixed, según tu necesidad */
+width: 100%;
+height: 85vh;
+/* Ocupa todo el ancho de la ventana */
+              /* Ocupa todo el alto de la ventana */
+    z-index: 1;             /* Coloca la imagen detrás del contenido */
+    object-fit: cover;       /* Ajusta la imagen para cubrir todo el espacio sin distorsión */
+    pointer-events: none;
+}
 
 
 .fondo_sobre_nosotros {
@@ -108,6 +129,14 @@
   color: white;
   cursor: pointer;
 }
+
+  .navbar-toggler {
+    border-color: white; /* opcional */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 
 .overlay-menu {
   list-style: none;
@@ -271,9 +300,22 @@
     display: none;
   } */
 
+.puede{
+  width: 100%;
+  height: 25vh;
+}
+
+.imag_fondo_pagina{
+      /* O fixed, según tu necesidad */
+width: 100%;
+height: 30vh;
+
+/* Ocupa todo el ancho de la ventana */
+
+}
 
   .icono_img{
-    height: 60px;
+   display: none;
   }
 
 
