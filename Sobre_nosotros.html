@@ -23,8 +23,8 @@
 
   <!-- Tu CSS personalizado -->
  <link href="assets/CSS/estilos.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/CSS/estilo_general.css">
-  <link rel="stylesheet" href="assets/CSS/sobre_nosotros.css">
+ <link rel="stylesheet" href="assets/CSS/sobre_nosotros.css">
+ <link rel="stylesheet" href="assets/CSS/estilo_general.css">
 </head>
 <body>
 
@@ -59,7 +59,9 @@
   </div>
 </div>
  
-
+<div id="alertaGlass" class="glass-alert">
+  🚧 ¡Función disponible próximamente!
+</div>
 
 
  <div class="fondo_sobre_nosotros">
@@ -90,12 +92,12 @@
           <li class="nav-item"><a href="colecciones.html" class="nav-link borde">Colecciones</a></li>
           <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde">Crea tu estilo</a></li>
           
-          <li class="nav-item"><a href="#" class="nav-link borde">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link borde">Favoritos</a></li>
+          <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde">Blog</a></li>
+          <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde">Favoritos</a></li>
            <li class="nav-item"><a href="contactanos.html" class="nav-link borde">Contactanos</a></li>
-          
-          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
-          <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person"></i></a></li>
+
+          <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link"><i class="bi bi-search"></i></a></li>
+          <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link"><i class="bi bi-person"></i></a></li>
           <li class="nav-item position-relative">
   <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cartModal">
     <i class="bi bi-cart"></i>
@@ -118,18 +120,21 @@
       <li><a href="colecciones.html">Colecciones</a></li>
       <li><a href="crea_tu_estilo.html">Crea tu estilo</a></li>
       <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Favoritos</a></li>
+      <li><a href="#" onclick="mostrarAlerta()">Blog</a></li>
+      <li><a href="#" onclick="mostrarAlerta()">Favoritos</a></li>
       <li><a href="contactanos.html">Contáctanos</a></li>
-      <li><a href="prueba.html">Prueba</a></li>
-      <li><a href="#"><i class="bi bi-search"></i></a></li>
-      <li><a href="login.html"><i class="bi bi-person"></i></a></li>
-       <li class="nav-item position-relative">
-                <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
-                  <i class="bi bi-cart"></i>
-                  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                </a>
-              </li>
+
+      <div class="iconos-header d-flex align-items-center gap-3">
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-search fs-4 text-white"></i></a>
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-person fs-4 text-white"></i></a>
+  <div class="position-relative">
+    <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="bi bi-cart fs-4 text-white"></i>
+      <span id="cart-count2" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+  </div>
+</div>
+
     </ul>
   </div>
 </div>
@@ -259,7 +264,7 @@
     <div class="row text-center text-md-start">
       <!-- Logo -->
       <div class="col-12 col-md-4 mb-4">
-        <div class="footer-logo">G<span>REXA</span></div>
+        <div class="footer-logo"><img src="assets/ICON/logo.svg" alt=""></div>
         <ul>
           <li>Inicio</li>
           <li>Colecciones</li>
@@ -281,9 +286,9 @@
       <div class="col-12 col-md-4 footer-section">
         <h6>Redes Sociales</h6>
         <div class="footer-social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-whatsapp"></i>
-          <i class="fab fa-tiktok"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-tiktok"></i>
         </div>
       </div>
     </div>

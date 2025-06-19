@@ -4,6 +4,7 @@ let total = parseFloat(localStorage.getItem('total')) || 0;
 // Inicializa contador y renderiza carrito al cargar
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('cart-count').innerText = cart.length;
+  document.getElementById('cart-count2').innerText = cart.length;
   renderCart();
 });
 
@@ -17,8 +18,16 @@ function addToCart(name, price, image) {
   total += price;
 
   document.getElementById('cart-count').innerText = cart.length;
+  document.getElementById('cart-count2').innerText = cart.length;
   saveCart(); // Guardamos en localStorage
   renderCart();
+
+   const alertBox = document.getElementById('cart-alert');
+  alertBox.textContent = `${name} añadido al carrito`;
+  alertBox.classList.add('show');
+  setTimeout(() => {
+    alertBox.classList.remove('show');
+  }, 2000);
 }
 
 function renderCart() {
@@ -48,10 +57,10 @@ function removeFromCart(index) {
   cart.splice(index, 1);
 
   document.getElementById('cart-count').innerText = cart.length;
+  document.getElementById('cart-count2').innerText = cart.length;
   saveCart(); // Guardamos después de borrar
   renderCart();
 }
-
 
 
 function comprar() {
@@ -65,9 +74,11 @@ function comprar() {
   total = 0;
   saveCart();
   renderCart();
-  document.getElementById('cart-count').innerText = 0;
 
-  // Mostrar alerta de éxito
+  document.getElementById('cart-count').innerText = 0;
+  document.getElementById('cart-count2').innerText = 0;
+
+  // Mostrar alerta de compra
   showAlert("¡Compra exitosa!", "success");
 }
 
@@ -81,13 +92,14 @@ function showAlert(message, type = "success") {
 
   setTimeout(() => {
     alert.classList.add('show');
-  }, 100); // para permitir transición
+  }, 100); // Mostrar animado
 
   setTimeout(() => {
     alert.classList.remove('show');
-    setTimeout(() => alert.remove(), 500);
+    setTimeout(() => alert.remove(), 500); // Remover del DOM
   }, 3000);
 }
+
 
 
   function mostrarAlerta() {

@@ -64,70 +64,77 @@
 </div>
 
     
-    <div class="fondo">
-       <div class="circulo N1"></div>
-       
+   
+    <div class="fondo_index">
+  <div class="puede">
+    <img src="assets/img/fondo_paginas.svg" class="imag_fondo_pagina" alt="">
 
-    <header class="position-relative bg-light py-4 overflow-hidden">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                
-                <a href="#" class="d-flex icono align-items-center text-decoration-none">
-            <!-- Reemplaza con tu SVG/PNG -->
-            <!-- <img class="icono_img" src="assets/ICON/logo.svg" alt="Logo Frena" > -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a href="#" class="d-flex icono align-items-center text-decoration-none">
+            <img class="icono_img" src="assets/ICON/logo.svg" alt="Logo Frena">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler text-white" type="button" id="menuToggle" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Menú normal -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
-              
-          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-          <!-- <li class="nav-item"><a href="colecciones.html" class="nav-link borde">Colecciones</a></li> -->
-          <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde">Crea tu estilo</a></li>
-          <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde">Sobre nosotros</a></li>
-          <li class="nav-item"><a href="#" class="nav-link borde">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link borde">Favoritos</a></li>
-          <li class="nav-item"><a href="contactanos.html" class="nav-link borde">Contactanos</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
-          <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person"></i></a></li>
-           <li class="nav-item position-relative">
-  <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cartModal">
-    <i class="bi bi-cart"></i>
-    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-  </a>
-</li>
-        </ul>
-        
-    </div>
-</div>
-</nav>
-</header>
-<br>
-  <!-- ========== HERO ========== -->
-  <section class="bg-light  py-5 position-relative">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Texto -->
-        <div class="col-6 mb-4 mb-md-0">
-        <img class="img_letras" src="assets/ICON/colecciones.svg" alt="">
-        </div>
-        <!-- Imagen -->
-        <div class="col-6 ">
-          <div class="border_imagen_decore" >
-            <img 
-              src="assets/ICON/colecccion_img.svg"
-              alt="Bolso destacado"
-              class="img-fluid rounded"
-            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a href="index.html" class="nav-link color">Inicio</a></li>
+              <li class="nav-item"><a href="colecciones.html" class="nav-link borde color">Colecciones</a></li>
+              <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde color">Crea tu estilo</a></li>
+              <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde color">Sobre nosotros</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color">Blog</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color">Favoritos</a></li>
+              <li class="nav-item"><a href="contactanos.html" class="nav-link borde color">Contactanos</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color"><i class="bi bi-search"></i></a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color"><i class="bi bi-person"></i></a></li>
+              <li class="nav-item position-relative">
+                <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
+                  <i class="bi bi-cart"></i>
+                  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="circulo N2"></div>
-  </section>
+      </nav>
+    </header>
 
+    <!-- Menú overlay -->
+    <div id="menuOverlay" class="menu-overlay">
+      <button class="close-btn" aria-label="Cerrar menú">&times;</button>
+      <ul class="overlay-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="crea_tu_estilo.html">Crea tu estilo</a></li>
+        <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+        <li><a href="#" onclick="mostrarAlerta()">Blog</a></li>
+        <li><a href="#" onclick="mostrarAlerta()">Favoritos</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+     <div class="iconos-header d-flex align-items-center gap-3">
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-search fs-4 text-white"></i></a>
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-person fs-4 text-white"></i></a>
+  <div class="position-relative">
+    <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="bi bi-cart fs-4 text-white"></i>
+      <span id="cart-count2" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+  </div>
+</div>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<br>
+  <!-- ========== HERO ========== -->
+ 
 
   </div>
 <br>
@@ -152,7 +159,10 @@
       </div>
     </div>
 <br>
-    <button class="btn btn-light btn-custom bt_ajuste" onclick="mostrarAlerta()">Ver más <i class="bi bi-arrow-right"></i></button>
+    <a href="colecciones_mujer.html" class="btn btn-light btn-custom bt_ajuste">
+  Ver más <i class="bi bi-arrow-right"></i>
+</a>
+
 
   </div>
 </section>
@@ -210,7 +220,7 @@
     <div class="row text-center text-md-start">
       <!-- Logo -->
       <div class="col-12 col-md-4 mb-4">
-        <div class="footer-logo">G<span>REXA</span></div>
+        <div class="footer-logo"><img src="assets/ICON/logo.svg" alt=""></div>
         <ul>
           <li>Inicio</li>
           <li>Colecciones</li>
@@ -232,9 +242,9 @@
       <div class="col-12 col-md-4 footer-section">
         <h6>Redes Sociales</h6>
         <div class="footer-social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-whatsapp"></i>
-          <i class="fab fa-tiktok"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-tiktok"></i>
         </div>
       </div>
     </div>
@@ -251,5 +261,6 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
   <script src="assets/JS/index.js"></script>
+  <script src="assets/JS/sobre_NS.js"></script>
 </body>
 </html>

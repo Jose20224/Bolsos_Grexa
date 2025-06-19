@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coleccion</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+  >
+  <!-- Fuente script para el hero -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tu CSS personalizado -->
+  <link href="assets/CSS/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/estilo_general.css">
+  <link rel="stylesheet" href="assets/CSS/pro_mujer.css">
+</head>
+<body>
+
+
+<!-- Modal Mejorado del Carrito -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="cartModalLabel">
+          <i class="bi bi-cart"></i> Carrito de Compras
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cart-items" class="list-group">
+          <!-- Aquí se mostrarán los productos -->
+        </ul>
+        <div class="mt-3 text-end">
+          <h5 class="fw-bold">Total: $<span id="cart-total">0.00</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="comprar()">
+          <i class="bi bi-credit-card"></i> Finalizar Compra
+        </button>
+        
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle"></i> Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="alertaGlass" class="glass-alert">
+  🚧 ¡Función disponible próximamente!
+</div>
+
+<div id="cart-alert" class="cart-alert">¡Producto añadido al carrito!</div>
+
+    
+   
+    <div class="fondo_index">
+  <div class="puede">
+    <img src="assets/img/fondo_paginas.svg" class="imag_fondo_pagina" alt="">
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a href="#" class="d-flex icono align-items-center text-decoration-none">
+            <img class="icono_img" src="assets/ICON/logo.svg" alt="Logo Frena">
+          </a>
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler text-white" type="button" id="menuToggle" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú normal -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a href="index.html" class="nav-link color">Inicio</a></li>
+              <li class="nav-item"><a href="colecciones.html" class="nav-link borde color">Colecciones</a></li>
+              <li class="nav-item"><a href="crea_tu_estilo.html" class="nav-link borde color">Crea tu estilo</a></li>
+              <li class="nav-item"><a href="Sobre_nosotros.html" class="nav-link borde color">Sobre nosotros</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color">Blog</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color">Favoritos</a></li>
+              <li class="nav-item"><a href="contactanos.html" class="nav-link borde color">Contactanos</a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color"><i class="bi bi-search"></i></a></li>
+              <li class="nav-item"><a href="#" onclick="mostrarAlerta()" class="nav-link borde color"><i class="bi bi-person"></i></a></li>
+              <li class="nav-item position-relative">
+                <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
+                  <i class="bi bi-cart"></i>
+                  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Menú overlay -->
+    <div id="menuOverlay" class="menu-overlay">
+      <button class="close-btn" aria-label="Cerrar menú">&times;</button>
+      <ul class="overlay-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="crea_tu_estilo.html">Crea tu estilo</a></li>
+        <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+        <li><a href="#" onclick="mostrarAlerta()">Blog</a></li>
+        <li><a href="#" onclick="mostrarAlerta()">Favoritos</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+    <div class="iconos-header d-flex align-items-center gap-3">
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-search fs-4 text-white"></i></a>
+  <a href="#" onclick="mostrarAlerta()"><i class="bi bi-person fs-4 text-white"></i></a>
+  <div class="position-relative">
+    <a href="#" class="nav-link color" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="bi bi-cart fs-4 text-white"></i>
+      <span id="cart-count2" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+  </div>
+</div>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<br>
+  <!-- ========== HERO ========== -->
+ 
+
+  </div>
+<br>
+  <!-- ========== BARRA DE BENEFICIOS ========== -->
+  <main>
+
+
+<section class="py-5 bg-white">
+
+
+  <div class="container">
+    <h3 class="text-center mb-5">Bolsos para damas</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+
+      <!-- Repite este bloque por cada producto -->
+      <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro1.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$59.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 59.00, 'assets/producto_mujer/pro1.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+
+   <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro2.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$230.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 230.00, 'assets/producto_mujer/pro2.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+ <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro3.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$79.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 79.00, 'assets/producto_mujer/pro3.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+ <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro4.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$159.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 159.00, 'assets/producto_mujer/pro4.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+       <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro5.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$90.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 90.00, 'assets/producto_mujer/pro5.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+
+       <div class="col">
+        <div class="card producto-card shadow-sm p-3">
+          <img src="assets/producto_mujer/pro6.svg" class="card-img-top" alt="Bolso Milano">
+          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+            <div class="text-start">
+    <div class="fw-semibold small">Línea Milano</div>
+    <div class="text-muted small">$40.00</div>
+  </div>
+  <button class="btn btn-outline-dark btn-sm"
+    onclick="addToCart('Línea Milano', 40.00, 'assets/producto_mujer/pro6.svg')">
+    Añadir al carrito
+  </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del bloque -->
+
+    </div>
+  </div>
+
+</section>
+
+  </main>
+
+<br>
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="footer-logo"><img src="assets/ICON/logo.svg" alt=""></div>
+        <ul>
+          <li>Inicio</li>
+          <li>Colecciones</li>
+          <li>Crea tu estilo</li>
+        </ul>
+      </div>
+
+      <!-- Sobre la marca -->
+      <div class="col-12 col-md-4 mb-4 footer-section">
+        <h6>Sobre la marca</h6>
+        <ul>
+          <li>Sobre nosotros</li>
+          <li>Blog</li>
+          <li>Favoritos</li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-12 col-md-4 footer-section">
+        <h6>Redes Sociales</h6>
+        <div class="footer-social-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-tiktok"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-4">
+      <p>© GREXA 2025. Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="assets/JS/index.js"></script>
+  <script src="assets/JS/sobre_NS.js"></script>
+</body>
+</html>
